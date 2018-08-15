@@ -99,7 +99,7 @@ class Lesson2_HW {
 		return nums;
 	}
 	public static int[] moveArrayItem (int[] x, int n) {
-		int realn = n % x.length; // finding real shift n if n>x.length;
+		int realn = n % x.length; // finding real shift realn if n>x.length;
 		int buffer = 0;
 		if (realn>0) {
 			for (int i = 1; i <= realn; i++) {
