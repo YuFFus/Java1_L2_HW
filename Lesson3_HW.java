@@ -5,6 +5,7 @@
  */
  import java.util.Scanner;
  import java.util.Random;
+ import java.util.Arrays;
  
  class Lesson3_HW {
 	// method for task 1;
@@ -46,14 +47,13 @@
 		String compWorld = mass[random.nextInt(25)];
 		System.out.println("Try to guess my world (name of fruit or vegitable).");
 		do{
-			String mask = "###############";
-			char[] maskArray = mask.toCharArray();
+			char[] mask = {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#'};
 			String userWorld = scanner.next();
 			if (userWorld.equals("exit")) break;
 			for (int i = 0, k = 0; (i <= (compWorld.length()-1)) && (k <= (userWorld.length()-1)); i++, k++) {
 				if (compWorld.charAt(i) == userWorld.charAt(i)){
 					equalCounter += 1;
-					maskArray[i] = userWorld.charAt(i);
+					mask[i] = userWorld.charAt(i);
 				}
 			}
 			if (equalCounter == userWorld.length()){
@@ -61,8 +61,7 @@
 				break;
 			}
 			else {
-				mask = new String(maskArray);
-				System.out.println("No, your variant is not equal to my. " + mask + " Try again one's more. exit for finish. ");
+				System.out.println("No, your variant is not equal to my. " + Arrays.toString(mask) + " Try again one's more. exit for finish. ");
 				equalCounter = 0;
 			}
 		}
