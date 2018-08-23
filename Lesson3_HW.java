@@ -21,17 +21,20 @@
 			for (int i=1; i<=3; i++) {
 				userTry = scanner.nextInt();
 				if (userTry == compValue) {
-				System.out.println("You win!!!");
-				break;
+					System.out.println("You win!!!");
+					break;
 				}
-				else if (userTry < compValue) System.out.println("Your value less then my. Try again.");
+				else if (userTry < compValue) 
+					System.out.println("Your value less then my. Try again.");
 				else System.out.println("Your value bigger then my. Try one's more.");
-				if (i==3) System.out.println("You loose!");
+				if (i==3) 
+					System.out.println("You loose!");
 			}
 			do {
 				System.out.println("Want to play one more time? 1- Yes / 0 - No ");
 				userChoise = scanner.nextInt();
-				if ((userChoise != 1) && (userChoise != 0)) System.out.println("Your choise is not clear for me. Try again. 1 - Yes / 0 - No. ");
+				if ((userChoise != 1) && (userChoise != 0)) 
+					System.out.println("Your choise is not clear for me. Try again. 1 - Yes / 0 - No. ");
 			}
 			while (!((userChoise == 1)||(userChoise == 0)));
 		}
