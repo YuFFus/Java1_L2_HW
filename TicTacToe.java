@@ -3,13 +3,13 @@ import java.util.Scanner;
 
 class TicTacToe {
 
-    final int SIZE = 3;
-    final char DOT_X = 'x';
-    final char DOT_O = 'O';
-    final char DOT_EMPTY = '.';
-    char[][] map = new char[SIZE][SIZE];
-    Scanner sc = new Scanner(System.in);
-    Random rand = new Random();
+    final int SIZE=3;
+    final char DOT_X='x';
+    final char DOT_O='O';
+    final char DOT_EMPTY='.';
+    char[][] map=new char[SIZE][SIZE];
+    Scanner sc=new Scanner(System.in);
+    Random rand=new Random();
 
     public static void main(String[] args) {
         new TicTacToe();
@@ -46,7 +46,7 @@ class TicTacToe {
     void initMap() {
         for (int i=0; i<SIZE; i++)
             for (int j=0; j<SIZE; j++)
-                map[i][j] = DOT_EMPTY;
+                map[i][j]=DOT_EMPTY;
     }
 
     void printMap(){
@@ -65,7 +65,7 @@ class TicTacToe {
             x=sc.nextInt()-1;
             y=sc.nextInt()-1;
         } while (!isCellValid(x, y));
-        map[y][x] = DOT_X;
+        map[y][x]=DOT_X;
     }
     // corrected method for HW.
     void aiTurn(int[] turn){
@@ -79,7 +79,7 @@ class TicTacToe {
                 x=rand.nextInt(SIZE);
                 y=rand.nextInt(SIZE);
             } while (!isCellValid(x, y));
-        map[x][y] = DOT_O;
+        map[x][y]=DOT_O;
     }
 
     boolean checkWin(char dot){
@@ -101,10 +101,10 @@ class TicTacToe {
     }
 // new method for increase computer Ai;
     int[] checkChanceOfHumanWin(){;
-        int[] resultH = {0, 0, 0};
-        int[] resultV = {0, 0, 0};
-        int[] resultD1 = {0, 0, 0};
-        int[] resultD2 = {0, 0, 0};
+        int[] resultH={0, 0, 0};
+        int[] resultV={0, 0, 0};
+        int[] resultD1={0, 0, 0};
+        int[] resultD2={0, 0, 0};
         for (int i=0; i<SIZE; i++){
             int equalCountH=0;
             int equalCountV=0;
@@ -162,13 +162,13 @@ class TicTacToe {
     boolean isMapFull(){
         for (int i=0; i<SIZE; i++)
             for (int j=0; j<SIZE; j++)
-                if(map[i][j] == DOT_EMPTY)
+                if(map[i][j]==DOT_EMPTY)
                     return false;
         return true;
     }
     boolean isCellValid(int x, int y){
         if (x<0||y<0||x>=SIZE||y>=SIZE)
             return false;
-        return map[y][x] == DOT_EMPTY;
+        return map[y][x]==DOT_EMPTY;
     }
 }
