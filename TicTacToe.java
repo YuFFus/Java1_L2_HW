@@ -15,7 +15,7 @@ class TicTacToe {
         new TicTacToe();
     }
 
-    Ti() {
+    TicTacToe() {
         initMap();
         while(true) {
             humanTurn();
@@ -99,7 +99,7 @@ class TicTacToe {
         }
         return false;
     }
-    // new method for increase computer Ai;
+// new method for increase computer Ai;
     int[] checkChanceOfHumanWin(){;
         int[] resultH = {0, 0, 0};
         int[] resultV = {0, 0, 0};
