@@ -3,7 +3,6 @@
  * @author Yuriy Fedak.
  * @version 25.08.2018.
 */
-import java.util.Arrays;
 
 class Lesson5_HW {
     
