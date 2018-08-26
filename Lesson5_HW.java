@@ -8,7 +8,7 @@ class Lesson5_HW {
     
     public static void main(String[] args){
         Person[] perArray=new Person[5];
-        arrayInit(perArray);
+        initArray(perArray);
         for (int i=0; i<perArray.length; i++){
             if (perArray[i].getAge()>40) 
                 System.out.println(toString(perArray[i]));
@@ -45,7 +45,7 @@ class Lesson5_HW {
         }
     }
     
-    private static Person[] arrayInit(Person[] perArray){
+    private static Person[] initArray(Person[] perArray){
         perArray[0]=new Person("Ivanov Ivan","porter", "ivanov@ivanov.ru", "+79991112535", 50000, 25);
         perArray[1]=new Person("Petrov Pyotr","rocker", "petrov@ivanov.ru", "+70001112577", 10000, 42);
         perArray[2]=new Person("Sidorov Sidr","ripper", "sidorov@ivanov.ru", "+71111112577", 30000, 39);
