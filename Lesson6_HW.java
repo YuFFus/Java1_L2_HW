@@ -9,11 +9,11 @@ class Lesson6_HW{
     public static void main(String args[]){
         Cat cat=new Cat(); // ordinary cat;
         Dog Dog=new Dog(); // ordinary dog;
-        Dog superDog=new Dog("SuperDog", 1000); // this is a superDog with extended run range;
+        Dog collie=new Dog("Сollie", 1000); // this is a superDog with extended run range;
         cat.run(150);
         cat.swim(2);
         Dog.jamp(1);
-        superDog.run(1000);
+        collie.run(1000);
     }
 }
 
@@ -58,8 +58,8 @@ class Dog extends Animal{
         jampLim=0.5f;
         swimLim=10;
     }
-    Dog(String name, int runLim){ // constructor for dogs with diffrend run range;
-        this.name=name;
+    Dog(String breed, int runLim){ // constructor for dogs with diffrend run range;
+        name=breed;
         this.runLim=runLim;
         jampLim=0.5f;
         swimLim=10;
