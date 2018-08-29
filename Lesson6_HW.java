@@ -1,7 +1,7 @@
 /**
  * Java1. Level 1. Lesson 6. Homework;
  * @author Fedak Yuriy;
- * @version 30.08.2018;
+ * @version 29.08.2018;
  * @link https://github.com/YuFFus/Java1_L2_HW.git ;
 */
 
