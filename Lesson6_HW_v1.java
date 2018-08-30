@@ -7,11 +7,12 @@
 
 class Lesson6_HW_v1{
     public static void main(String args[]){
-        Cat cat=new Cat("Cat", 200, 2);
-        Dog Dog=new Dog("Collie", 500, 0.5, 10);
-        cat.run(150);
-        cat.swim(2);
-        Dog.jamp(1);
+        IAnimal[] animals = {new Cat("Cat", 200, 2), new Dog("Collie", 500, 0.5, 10)};
+        for (IAnimal animal:animals){
+            animal.run(150);
+            animal.swim(2);
+            animal.jamp(1);
+        }
     }
 }
 interface IAnimal{
