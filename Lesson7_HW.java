@@ -1,7 +1,7 @@
 /**
  * Java 1. Level 1. Lesson 7. Homework.
  * @author Yuriy Fedak;
- * @version 01.09.2018;
+ * @version 02.09.2018;
  * @link https://github.com/YuFFus/Java1_L2_HW.git;
  */
 import java.util.Random;
